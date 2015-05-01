@@ -176,10 +176,10 @@ class NNTPProxyServer(LineReceiver):
 #		self.sendLine('430 no article with that message-id')
 #		log.msg("%s failed HEAD" % (repr(self.auth_user)))
 #		self.transport.loseConnection()
-    elif line.upper().startswith('POST'):
-		self.sendLine('440 Posting not permitted')
-		log.msg("%s failed POST" % (repr(self.auth_user)))
-		self.transport.loseConnection()
+#    elif line.upper().startswith('POST'):
+#		self.sendLine('440 Posting not permitted')
+#		log.msg("%s failed POST" % (repr(self.auth_user)))
+#		self.transport.loseConnection()
     elif line.upper().startswith('IHAVE'):
 		self.sendLine('435 Article not wanted')
 		log.msg("%s failed IHAVE" % (repr(self.auth_user)))
