@@ -2,7 +2,6 @@
 #
 # nntp2nntp - base script "nntp2nntp_v3"
 # mod by oVPN.to 
-# + deny POSTing!
 # + dynamic USER file
 # Built: v3-0.1.0
 
